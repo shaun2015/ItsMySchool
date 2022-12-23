@@ -132,6 +132,6 @@ My focus was mainly the back end of the project i.e the Python end of the projec
 
 
 ### Attribution report
-Licence: MIT Licence
-Copyright: Sumit Kumar @ 2020
+- Licence: MIT Licence
+- Copyright: Sumit Kumar @ 2020
 
