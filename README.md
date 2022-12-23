@@ -98,25 +98,30 @@ This functionalities are performed by the Admin User
 
 ### Python Explaination
 - manage.py:
-This file helps us to start the server that gives us the link to the start the website on the client side. We use Django for the server side.
+This file helps us to start the server that gives us the link to the start the website on the client side. We use Django for the server side.(https://github.com/shaun2015/ItsMySchool/blob/main/manage.py)
+
 #### school:
 - admin.py:
-In this file we give the admin the privilages to register a student, teacher. We also give admin the privilages to access the attendence, and also the admin is able to display and write any notices that they want everyone to see.
+In this file we give the admin the privilages to register a student, teacher. We also give admin the privilages to access the attendence, and also the admin is able to display and write any notices that they want everyone to see.(https://github.com/shaun2015/ItsMySchool/blob/main/school/admin.py)
+
 - forms.py:
-In this file we configure the forms for admin, students and teachers. We make forms to store the information about the student, teacher or admin who is registering or is login-in. We also use forms to generate username and password for the user. In this file we also configure the form for attendence which is whether the student is present or absent.
+In this file we configure the forms for admin, students and teachers. We make forms to store the information about the student, teacher or admin who is registering or is login-in. We also use forms to generate username and password for the user. In this file we also configure the form for attendence which is whether the student is present or absent.(https://github.com/shaun2015/ItsMySchool/blob/main/school/forms.py)
+
 - models.py:
-In this file we configure models for the students and teachers. We also create models for attendence page and also we create a model for the notice page.
+In this file we configure models for the students and teachers. We also create models for attendence page and also we create a model for the notice page.(https://github.com/shaun2015/ItsMySchool/blob/main/school/models.py)
+
 - views.py:
-In this file we configure the pages and links with html templates. We link the fuctions with html pages for the users who have successfully logged in or throw an error if there was any error while login-in. This file also helps the fuctions that are used to sign-in/register to link with their respective html pages. This file also contains fuctions that help to authenticate the user and check if the username and password is right or wrong. So basically we use this file to link the html pages with thier respective fuctions and also this file checks the authentication process of the project.
+In this file we configure the pages and links with html templates. We link the fuctions with html pages for the users who have successfully logged in or throw an error if there was any error while login-in. This file also helps the fuctions that are used to sign-in/register to link with their respective html pages. This file also contains fuctions that help to authenticate the user and check if the username and password is right or wrong. So basically we use this file to link the html pages with thier respective fuctions and also this file checks the authentication process of the project.(https://github.com/shaun2015/ItsMySchool/blob/main/school/views.py)
+
 #### schoolmanagement:
 - asgi.py:
-In this file we configure the ASGI for the project. 
+In this file we configure the ASGI for the project. (https://github.com/shaun2015/ItsMySchool/blob/main/schoolmanagement/asgi.py)
 - settings.py:
-This file contains the Django settings for the project.
+This file contains the Django settings for the project.(https://github.com/shaun2015/ItsMySchool/blob/main/schoolmanagement/settings.py)
 - urls.py: 
-This file contains the path to all html links and fuctions used to link them.
+This file contains the path to all html links and fuctions used to link them.(https://github.com/shaun2015/ItsMySchool/blob/main/schoolmanagement/urls.py)
 - wsgi.py:
-In this file we configure the WSGI for the project.
+In this file we configure the WSGI for the project.(https://github.com/shaun2015/ItsMySchool/blob/main/schoolmanagement/wsgi.py)
 
 
 ### Contribution Report
