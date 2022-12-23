@@ -23,8 +23,9 @@ Front end: HTML, Bootstrap
 * HTML : HTML is used to create and save web document
 * Bootstrap : Responsive design mobile friendly site
 
-Back end : SQLite
+Back end : SQLite, Python
 * SQLite : SQLite is a database, widely used for accessing querying, updating, and managing data in database
+* Python : Python is a very popular and trending programming language used in many IT sectors.
 
 ## Modules and description of the project
 
@@ -95,7 +96,27 @@ This functionalities are performed by the Admin User
 - Listing of attandance
 - Filter attandance according to student
 
-
+### Python Explaination
+- manage.py:
+This file helps us to start the server that gives us the link to the start the website on the client side. We use Django for the server side.
+#### school:
+- admin.py:
+In this file we give the admin the privilages to register a student, teacher. We also give admin the privilages to access the attendence, and also the admin is able to display and write any notices that they want everyone to see.
+- forms.py:
+In this file we configure the forms for admin, students and teachers. We make forms to store the information about the student, teacher or admin who is registering or is login-in. We also use forms to generate username and password for the user. In this file we also configure the form for attendence which is whether the student is present or absent.
+- models.py:
+In this file we configure models for the students and teachers. We also create models for attendence page and also we create a model for the notice page.
+- views.py:
+In this file we configure the pages and links with html templates. We link the fuctions with html pages for the users who have successfully logged in or throw an error if there was any error while login-in. This file also helps the fuctions that are used to sign-in/register to link with their respective html pages. This file also contains fuctions that help to authenticate the user and check if the username and password is right or wrong. So basically we use this file to link the html pages with thier respective fuctions and also this file checks the authentication process of the project.
+#### schoolmanagement:
+- asgi.py:
+In this file we configure the ASGI for the project. 
+- settings.py:
+This file contains the Django settings for the project.
+- urls.py: 
+This file contains the path to all html links and fuctions used to link them.
+- wsgi.py:
+In this file we configure the WSGI for the project.
 
 
 ### Contribution Report
@@ -103,11 +124,14 @@ This functionalities are performed by the Admin User
 Swikar Omargekar (10608904@mydbs.ie)
 
 As we have described above, We have various parts like the index page, admin page, teacher page, student page. I have mainly focused on the front end and database.
-So, when we will run the project, we will see the "Take Admission" on the index page. Here, we can Sign in or Create new loign to take the attandance in the school. As we go further, we will see admin page where he/she can login and has access to everything. Admin can manage teacher's, student's, attandance section respectively. Furthermore, In teacher's section, we will get all the information related to teacher. For eg. Adding new teachers, Edit existing teacher details, Teacher's salary, Any pending request of the teacher. Whereas in Student section, We will see Number of students, Add new student, Edit existing student details, Student fees pending and attandance. In fees section, we will see the fee structure, pending fees of the students etc. In attandance section, only Admin and Teacher can access this part. They can alter the attandance of the student datewise. We have created database as back-end with SQLite where all this information get stored. Here's some example of the code links...
+So, when we will run the project, we will see the "Take Admission" on the index page. Here, we can Sign in or Create new loign to take the attandance in the school. As we go further, we will see admin page where he/she can login and has access to everything. Admin can manage teacher's, student's, attandance section respectively. Furthermore, In teacher's section, we will get all the information related to teacher. For eg. Adding new teachers, Edit existing teacher details, Teacher's salary, Any pending request of the teacher. Whereas in Student section, We will see Number of students, Add new student, Edit existing student details, Student fees pending and attandance. In fees section, we will see the fee structure, pending fees of the students etc. In attandance section, only Admin and Teacher can access this part. They can alter the attandance of the student datewise. We have created database as back-end with SQLite where all this information get stored. 
 
-PLEASE ENTER THE GIT HUB LINKS OF DATABASE FOR TEACHER, STUDENT AS AN EXAMPLE
-$ add your contribution report
-$ add appropriate details like in table form
-$ add more details to it
-$ add attribution report
+Shaun Christopher Chaudhary (10622059@mydbs.ie)
+
+My focus was mainly the back end of the project i.e the Python end of the project. I made the python pages to link the the html templates created my Swikar with the python code using various functions. I also created python fuctions that will check the login-in and sign-up process for students, teachers and admin in the project. I also linked the database to my code. My code checks the entire fuctionality of the project and helps the project run smoothly from the backend. I created the models and forms fuctions in the backend so that the forms for students, teachers and the admin run perfectly with thier models. I also created fuctions for the admin that gives the admin all the privillages to accept or reject a student's application or a teacher's job request, also I have configured the admin is such a way that the admin can access all the information about a teacher or student and also the admin is able to see and change the attendence.
+
+
+### Attribution report
+Licence: MIT Licence
+Copyright: Sumit Kumar @ 2020
 
